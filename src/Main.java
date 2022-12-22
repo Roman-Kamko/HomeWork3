@@ -1,3 +1,5 @@
+import java.awt.geom.Arc2D;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -64,6 +66,7 @@ public class Main {
             System.out.println("За месяц машина произвела " + bottlePerMonth + " штук бутылок");
         }
         public static void task5() {
+        // Задание 5
         int paintNeed = 120;
         int whitePaintNeedPerClass = 2;
         int brownPaintNeedPerClass = 4;
@@ -73,7 +76,45 @@ public class Main {
         int numOfBrownPaints = numOfClasses * brownPaintNeedPerClass;
             System.out.println("В школе, где " + numOfClasses + " классов, нужно " + numOfWhitePaints + " банок белой краски и " + numOfBrownPaints + " банок коричневой краски");
         }
-        public static void task6() {}
-        public static void task7() {}
-        public static void task8() {}
+        public static void task6() {
+        // Задание 6
+        int numBananas = 5;
+        int bananasWeight = numBananas * 80;
+        int volMilk = 200;
+        int milkWeight = (int) (volMilk * 1.05);
+        int numIceCream = 2;
+        int iceCreamWeight = numIceCream * 100;
+        int numEggs = 4;
+        int eggsWeight = numEggs * 70;
+        int sumWeightInGram = bananasWeight + milkWeight + iceCreamWeight + eggsWeight;
+            System.out.println("Общий все завтрака " + sumWeightInGram + " грамм");     // 1090
+        double sumWeightInKilogram = sumWeightInGram / 1000D;
+            System.out.println("Общий вес завтрака " + sumWeightInKilogram + " килограмм");
+        }
+        public static void task7() {
+        // Задание 7
+        int needToLoseWeightInKG = 7;
+        int needToLoseWeightInGr = needToLoseWeightInKG * 1000;
+        int scenario1 = 250;
+        int daysNeed1 = needToLoseWeightInGr / scenario1;
+            System.out.println("Чтобы похудеть на " + needToLoseWeightInKG + " кг, теряя в день по 250 грамм, потребуется " + daysNeed1 + " дней");
+        float scenario2 = 750F;
+        float daysNeed2 = needToLoseWeightInGr / scenario2;
+            System.out.println("Чтобы похудеть на " + needToLoseWeightInKG + " кг, теряя в день по 750 грамм, потребуется " + daysNeed2 + " дня");
+        }
+        public static void task8() {
+        // Задание 8
+        int mashaWages = 67760;
+        int newMashaWages = (int) (mashaWages * 1.10);
+        int mashaWagesChangePerYear = newMashaWages * 12 - mashaWages * 12;
+            System.out.println("Маша теперь получает " + newMashaWages + " рублей. Годовой доход вырос на " + mashaWagesChangePerYear + " рублей.");
+        int denisWages = 83690;
+        int newDenisWages = (int) (denisWages * 1.10);
+        int denisWagesChangePerYear = newDenisWages * 12 - denisWages * 12;
+            System.out.println("Денис теперь получает " + newDenisWages + " рублей. Годовой доход вырос на " + denisWagesChangePerYear + " рублей.");
+        int kristinaWages = 76230;
+        int newKristinaWages = (int) (kristinaWages * 1.10);
+        int kristinaWagesChangePerYear = newKristinaWages * 12 - kristinaWages * 12;
+            System.out.println("Кристина теперь получает " + newKristinaWages + " рублей. Годовой доход вырос на " + kristinaWagesChangePerYear + " рублей.");
+        }
 }
