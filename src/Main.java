@@ -26,17 +26,17 @@ public class Main {
         }
         public static void task2() {
         // Задание 2
-        float a = 27.12F;
+        double a = 27.12;
             System.out.println(a);
         long b = 987678965549L;
             System.out.println(b);
         float c = 2.786F;
             System.out.println(c);
-        short d = 569;
+        int d = 569;
             System.out.println(d);
         short i = -159;
             System.out.println(i);
-        short f = 27897;
+        long f = 27897L;
             System.out.println(f);
         byte g = 67;
             System.out.println(g);
@@ -99,6 +99,8 @@ public class Main {
         float scenario2 = 750F;
         float daysNeed2 = needToLoseWeightInGr / scenario2;
             System.out.println("Чтобы похудеть на " + needToLoseWeightInKG + " кг, теряя в день по 750 грамм, потребуется " + daysNeed2 + " дня");
+        float averageNumDays = (daysNeed1 - daysNeed2) % (daysNeed1 + daysNeed2);
+            System.out.println("Чтобы похудеть на " + needToLoseWeightInKG + " кг, теряя в день  250 - 750 грамм, в среднем потребуется " + averageNumDays + " дней");
         }
         public static void task8() {
         // Задание 8
